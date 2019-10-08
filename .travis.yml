@@ -7,3 +7,4 @@ install:
 # command to run tests
 script:
   - python .ci/check_scripts.py
+  - if $(git diff --name-only HEAD..$TRAVIS_BRANCH | grep -q ".ci"); then pytest .ci/; fi
