@@ -1,0 +1,112 @@
+working:
+    - README.md:
+        - "# index"
+        - "[country A](./countryA/README.md)"
+      countryA:
+          README.md:
+            - "# Country A"
+            - "- [city a](cityA.md)"
+          cityA.md:
+            - "# City A"
+            - "I like the Aes"
+            - "Read more at [wikipedia](http://en.wikipedia.com/cityA)"
+    - README.md:
+        - "# index"
+        - "[country A](countryA/README.md)"
+      countryA:
+          README.md:
+            - "# Country A"
+            - "- [city a](cityA.md)"
+            - "- [Province](province/README.md)"
+          cityA.md:
+            - "# City A"
+            - "I like the Aes"
+            - "Read more at [wikipedia](http://en.wikipedia.com/cityA)"
+          province:
+            README.md:
+              - "# nice province"
+              - "- [subcity](subcity.md)"
+            subcity.md:
+              - "# subcity"
+              - "Who knows why we like it here"
+              - "Read all about this place at [wikivoyage](http://en.wikivoyage.org/wiki/subcity)"
+failing:
+    - README.md:
+        - "# index"
+        - "[country A](./countryC/README.md)" # Wrong link
+      countryA:
+          README.md:
+            - "# Country A"
+            - "- [city a](cityA.md)"
+          cityA.md:
+            - "# City A"
+            - "I like the Aes"
+            - "Read more at [wikipedia](http://en.wikipedia.com/cityA)"
+    - README.md:
+        - "# index"
+        - "[country A](./countryA/README.md)"
+      countryA:
+          README.md:
+            - "# Country A" # Missing link to cityA
+          cityA.md:
+            - "# City A"
+            - "I like the Aes"
+            - "Read more at [wikipedia](http://en.wikipedia.com/cityA)"
+    - README.md:
+        - "# index"
+        - "[country A](_/countryA/README.md)" # Wrong link to country A
+      countryA:
+          README.md:
+            - "# Country A"
+            - "- [city a](/cityD.md)"
+          cityA.md:
+            - "# City A"
+            - "I like the Aes"
+            - "Read more at [wikipedia](http://en.wikipedia.com/cityA)"
+          province:
+            README.md:
+              - "# nice province"
+            subcity.md:
+              - "# subcity"
+              - "Who knows why we like it here"
+              - "Read all about this place at [wikivoyage](http://en.wikivoyage.org/wiki/subcity)"
+tree:
+  - toconvert:
+      README.md:
+        - ""
+      countryA:
+        README.md:
+          - ""
+        cityA.md:
+          - ""
+      countryB:
+        README.md:
+          - ""
+    expected:
+      README.md: ""
+      countryA/README.md: ""
+      countryA/cityA.md: ""
+      countryB/README.md: ""
+  - toconvert:
+      README.md:
+        - ""
+      countryA:
+        README.md:
+          - ""
+        provinceA:
+          README.md:
+            - ""
+          cityA.md:
+            - ""
+          subprovinceA:
+            README.md:
+              - ""
+            subcityA.md:
+              - ""
+    expected:
+      README.md: ""
+      countryA/README.md: ""
+      countryA/provinceA/README.md: ""
+      countryA/provinceA/cityA.md: ""
+      countryA/provinceA/subprovinceA/README.md: ""
+      countryA/provinceA/subprovinceA/subcityA.md: ""
