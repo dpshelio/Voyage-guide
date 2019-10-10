@@ -1,3 +1,0 @@
-#Canary Islands
-asdasfqwfidshcof
-fqefeqfeqf
