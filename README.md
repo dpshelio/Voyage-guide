@@ -1,7 +1,7 @@
 # The ultimate travel guide
  - [AFRICA](./africa/README.md)
  - [ASIA](./asia/README.md)
-	- [japan](./asia/japan.md)
+	- [japan](./asia/Japan.md)
  - [EUROPE](./europe/README.md)
  - [NORTH_AMERICA](./north_america/README.md)
  - [OCEANIA](./oceania/README.md)
