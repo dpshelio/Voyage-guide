@@ -1,3 +1,3 @@
 # United Kingdom
 
-- [Leicester](./Leicester.md)
+- [Leicester](./leicester.md)
