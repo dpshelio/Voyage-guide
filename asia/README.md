@@ -1,1 +1,2 @@
 # ASIA
+- [Mongolia](mongolia.md)
