@@ -1,1 +1,3 @@
 # OCEANIA
+
+[Japan](./Japan.md)
