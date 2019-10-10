@@ -1,2 +1,2 @@
 # EUROPE
-wales.md
+[Wales](./wales.md)
