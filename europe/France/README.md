@@ -1,2 +1,2 @@
 #FRANCE
-[Paris] (./Paris.md)
+[Paris](./Paris.md)
