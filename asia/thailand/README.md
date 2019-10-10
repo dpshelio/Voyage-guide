@@ -1,0 +1,2 @@
+# Thailand
+- [BANGKOK](./bangkok.md)
