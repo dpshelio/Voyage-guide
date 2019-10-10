@@ -1,2 +1,2 @@
 # ASIA
-- [Thai](./Thai/)
+- [Thai](./Thai/README.md)
