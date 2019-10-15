@@ -6,7 +6,7 @@ from testfixtures import tempdir, compare
 import yaml
 
 
-from check_sripts import analyse_files
+from check_scripts import analyse_files
 
 def read_fixture(expected):
     with open(os.path.join(os.path.dirname(__file__),
