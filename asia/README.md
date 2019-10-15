@@ -1,1 +1,1 @@
-# ASIA
+[Japan](/japan)
