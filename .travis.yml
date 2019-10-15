@@ -3,7 +3,7 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - pip install markdown_link_extractor
+  - pip install markdown_link_extractor testfixtures
 # command to run tests
 script:
   - python .ci/check_scripts.py
