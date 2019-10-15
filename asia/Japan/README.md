@@ -1,0 +1,3 @@
+# Japan
+
+[Tokyo](tokyo.md)
