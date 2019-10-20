@@ -1,2 +1,2 @@
 # ASIA
-- [singapore.md](canary-islands.md)
+- [singapore.md](singapore.md)
